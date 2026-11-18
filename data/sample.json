@@ -1,0 +1,86 @@
+{
+  "schedule": [
+    {
+      "site": "A",
+      "round": 1,
+      "assigned": "audio",
+      "actual": "audio",
+      "message": "m1",
+      "kind": "city"
+    },
+    {
+      "site": "A",
+      "round": 2,
+      "assigned": "paper",
+      "actual": "paper",
+      "message": "m2",
+      "kind": "city"
+    },
+    {
+      "site": "B",
+      "round": 1,
+      "assigned": "paper",
+      "actual": "audio",
+      "message": "m1",
+      "kind": "rural"
+    },
+    {
+      "site": "B",
+      "round": 2,
+      "assigned": "audio",
+      "actual": null,
+      "message": "m2",
+      "kind": "rural"
+    }
+  ],
+  "messages": [
+    {
+      "message": "m1",
+      "topic": "venue"
+    },
+    {
+      "message": "m2",
+      "topic": "venue"
+    }
+  ],
+  "crossings": [
+    {
+      "site": "B",
+      "host": "A",
+      "round": 1,
+      "message": "m1"
+    }
+  ],
+  "returns": [
+    {
+      "site": "A",
+      "round": 1,
+      "correct": true
+    },
+    {
+      "site": "A",
+      "round": 2,
+      "correct": true
+    },
+    {
+      "site": "A",
+      "round": 2,
+      "correct": null
+    },
+    {
+      "site": "B",
+      "round": 1,
+      "correct": false
+    },
+    {
+      "site": "B",
+      "round": 2,
+      "correct": null
+    }
+  ],
+  "policy": {
+    "washout": 2,
+    "round_budget": 2,
+    "call_budget": 3
+  }
+}
